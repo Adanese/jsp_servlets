@@ -9,6 +9,7 @@
   <servlet-mapping>
     <servlet-name>abc</servlet-name>
     <url-pattern>/add</url-pattern>
+    <http-method>POST</http-method>
   </servlet-mapping>
   
  
@@ -20,6 +21,7 @@
   <servlet-mapping>
     <servlet-name>pqr</servlet-name>
     <url-pattern>/sq</url-pattern>
+    <http-method>POST</http-method>
   </servlet-mapping>
   
 </web-app>

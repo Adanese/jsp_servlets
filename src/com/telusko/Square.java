@@ -7,15 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
-public class Square
+public class Square extends HttpServlet
 {
 	 public void doGet(HttpServletRequest req, HttpServletResponse res)throws ServletException, IOException 
 	   {
-		 int k = (int)req.getAttribute("k");
+		 int k = Integer.parseInt(req.getParameter("k"));
 		 k = k*k;
 		  
 		 PrintWriter out = res.getWriter();
 		 out.println("Result is = " +k);
+		 
+		 System.out.print("called");
 		
 	   }
 	  
